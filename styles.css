@@ -34,37 +34,12 @@ body, h1, h2, h3, p, ul, li {
     color: white;
     text-align: center;
     padding: 100px 0;
+    max-width: fit-content;
   }
   
   .hero-content {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  /* About section */
-  #about {
-    background-color: #f7f7f7;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  /* Services section */
-  #services {
-    background-color: #e0e0e0;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .services-content ul {
-    list-style: none;
-  }
-  
-  /* Contact section */
-  #contact {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
   }
   
   /* Call-to-action button */
