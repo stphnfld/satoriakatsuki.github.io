@@ -3,30 +3,32 @@ body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
     background-image: url('milky-way-starry-sky-night-sky-star-956981.jpeg');
-  }
-  
-  /* Basic styling */
-  body {
+    color: #FFF; /* Set font color to white */
+}
+
+/* Basic styling */
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: white;
     margin: 0 20px;
-  }
+}
+
   
   /* Hero section */
   #hero {
@@ -41,7 +43,6 @@ body, h1, h2, h3, p, ul, li {
     margin: 0 auto;
   }
   
-  /* Call-to-action button */
   .cta-button {
     display: inline-block;
     background-color: #ff5500;
@@ -51,15 +52,15 @@ body, h1, h2, h3, p, ul, li {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-  }
+}
   
   /* Responsive design */
   @media screen and (max-width: 768px) {
