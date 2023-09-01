@@ -34,7 +34,6 @@ body, h1, h2, h3, p, ul, li {
     color: #000000;
     text-align: center;
     padding: 100px 0;
-    max-width: fit-content;
   }
   
   .hero-content {
