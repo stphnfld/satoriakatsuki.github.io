@@ -20,7 +20,7 @@
     var randomVideoUrl = youtubeLinks[randomIndex];
 
     var youtubeIframe = document.getElementById('youtube-iframe');
-    youtubeIframe.src = "https://www.youtube.com/embed/" + getVideoId(randomVideoUrl);
+    youtubeIframe.src = getVideoId(randomVideoUrl);
 
     // Function to extract video ID from a YouTube URL
     function getVideoId(url) {
