@@ -22,6 +22,7 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9); /* Optional background color with transparency */
   z-index: 1000; /* Adjust the z-index as needed */
+  background-color: #FF847C;
 }
 
 nav {
@@ -34,7 +35,6 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #FF847C;
 }
 
 nav ul li {
