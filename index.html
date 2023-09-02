@@ -38,14 +38,7 @@
     var randomVideoUrl = youtubeLinks[randomIndex];
 
     var youtubeIframe = document.getElementById('youtube-iframe');
-    youtubeIframe.src = getVideoId(randomVideoUrl);
-
-    // Function to extract video ID from a YouTube URL
-    function getVideoId(url) {
-        var regex = /(?:\/watch\?v=|\/embed\/|\/v\/|\/\d\/|\/\d#)([^#\&\?]*).*/;
-        var match = url.match(regex);
-        return match && match[1].length === 11 ? match[1] : null;
-    }
+    youtubeIframe.src = randomVideoUrl;
   </script>
   <footer class="footer-gradient">
     <span>&copy; 2023 Satori Akatsuki. All rights reserved.</span>
