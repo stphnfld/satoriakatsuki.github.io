@@ -1,9 +1,15 @@
 /* Reset some default styles for better consistency */
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, h3 {
   margin: 0;
   padding: 0;
   color: #FFF; /* Set font color to white */
   background-color: #99B898; /* Updated background color */
+}
+ul{
+  background-color:#FF847C;
+}
+p{
+  background-color: #99B898;
 }
 
 /* Basic styling */
@@ -125,6 +131,7 @@ footer {
   border-radius: 5px;
 }
 
-.footer p{
-  background-color: #2A363B !important;
+footer p {
+  background-color: #2A363B; /* Replace with your desired background color */
+  padding: 10px;
 }
