@@ -4,6 +4,7 @@ body, h1, h2, h3, p, ul, li {
   padding: 0;
   color: #FFF; /* Set font color to white */
   background-color: #99B898; /* Updated background color */
+  background-image: linear-gradient(180deg, #99B898 50%, #FECEAB 50%); /* Add gradient */
 }
 
 /* Basic styling */
