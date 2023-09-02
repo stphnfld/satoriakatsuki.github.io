@@ -135,7 +135,7 @@ footer {
   background-color: #FECEAB;
 }
 .section-grid {
-  background: linear-gradient(to bottom right, #FECEAB, #2A363B);
+  background:#FECEAB;
 }
 
 .grid-content {
@@ -151,6 +151,5 @@ footer {
   background: linear-gradient(to bottom right, #2A363B, #FECEAB);
 }
 footer p {
-  background-color: #2A363B; /* Replace with your desired background color */
   padding: 10px;
 }
