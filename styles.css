@@ -342,11 +342,23 @@ footer {
 }
 
 /* Styling for the additional links span */
-.footer-links {
-  font-size: 8pt; /* 8pt font size */
+.footer-copyright {
+  text-transform: uppercase; /* Uppercase text */
+  font-size: 12pt; /* 12pt font size */
+  display: block; /* Display as block element */
+  text-align: center; /* Center the content */
+  margin-bottom: 10px; /* Add space between the two spans */
 }
 
-.footer-links a {
-  text-decoration: underline; /* Underline links */
-  color: #333; /* Link color */
+/* Styling for the additional links span */
+.footer-links {
+  font-size: 8pt; /* 8pt font size */
+  display: block; /* Display as block element */
+  text-align: center; /* Center the content */
+}
+
+.terms-and-conditions-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
