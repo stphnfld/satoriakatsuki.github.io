@@ -68,7 +68,7 @@ nav a {
   background-size: cover;
   color: #000000;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 100px;
 }
 
 .hero-content {
@@ -120,6 +120,7 @@ footer {
   padding: 50px 20px; /* Adjust margin as needed */
   box-sizing: border-box;
   position: relative; /* Add position: relative */
+  margin-top: 50px;
 }
 
 
