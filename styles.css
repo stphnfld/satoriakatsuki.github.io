@@ -122,6 +122,7 @@ footer {
   position: relative; /* Add position: relative */
 }
 
+
 #logo img {
   max-width: 55%; /* Adjust this value to make the logo smaller */
   height: auto;
