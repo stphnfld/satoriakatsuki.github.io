@@ -101,7 +101,7 @@ footer {
   justify-content: center;
   margin: 0 auto;
   max-width: 100%;
-  padding: 50px 20px; /* Adjust margin as needed */
+  padding: 250px 20px; /* Adjust margin as needed */
   box-sizing: border-box;
   position: relative; /* Add position: relative */
   margin-top: 50px;
@@ -110,7 +110,7 @@ footer {
 
 
 #logo img {
-  max-width: 55%; /* Adjust this value to make the logo smaller */
+  max-width: 33%; /* Adjust this value to make the logo smaller */
   height: auto;
 }
 
