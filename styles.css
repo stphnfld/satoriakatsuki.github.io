@@ -92,7 +92,7 @@ footer {
   background-color: #2A363B;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 /* About section */
@@ -153,4 +153,18 @@ footer {
 }
 footer p {
   padding: 10px;
+}
+
+.random-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99B898;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+/* Optional: Style the embedded iframe */
+#youtube-iframe {
+  max-width: 100%;
+  max-height: 100%;
 }
