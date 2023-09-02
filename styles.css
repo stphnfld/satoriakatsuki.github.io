@@ -221,6 +221,9 @@ footer {
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: center;
+  padding: 200 0;
+  margin: auto;
+  max-width: 600px;
 }
 
 .contact-content h2 {
@@ -236,4 +239,8 @@ footer {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+#contact {
+  margin: 200px;
 }
