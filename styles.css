@@ -301,3 +301,20 @@ footer {
       margin-top: 100px !important;
   }
 }
+
+.random-video {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive sizing */
+}
+
+#youtube-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
