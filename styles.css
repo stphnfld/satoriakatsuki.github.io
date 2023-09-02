@@ -3,15 +3,14 @@ body, h1, h2, h3 {
   margin: 0;
   padding: 0;
   color: #FFF; /* Set font color to white */
-  background-color: #99B898; /* Updated background color */
+}
+
+body {
+  background-color: #99B898;
 }
 
 ul{
   background-color:#FF847C;
-}
-
-p{
-  background-color: #99B898;
 }
 
 /* sticky header */
@@ -218,14 +217,20 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  padding: 2em;
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: center;
-  padding: 200 0;
+  padding: 2em;
   margin: auto;
   max-width: 600px;
   background-image: url(behind-logo-purple-lights.png);
+  background-size: cover; /* Adjust the background sizing */
+  background-repeat: no-repeat;
+}
+
+.contact-content h2,
+.contact-content p {
+  margin: 0; /* Remove default margins */
 }
 
 .contact-content h2 {
