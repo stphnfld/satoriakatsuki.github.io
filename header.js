@@ -3,6 +3,7 @@ var headerHtml = `
   <header>
     <nav>
       <ul>
+        <li><a href="/"><img src="satoriakatsukilogo2023.png" class="headerlogo"></img></a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="https://www.youtube.com/channel/satoriakatsuki" target="_blank">YouTube</a></li>
         <li><a href="/contact.html">Contact</a></li>
