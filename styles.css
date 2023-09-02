@@ -111,6 +111,13 @@ footer {
   padding: 20px 0;
   background-color: #FECEAB;
 }
+.section-grid{
+  background: linear-gradient(to bottom right, #FECEAB, #2A363B);
+}
+
+.section-logo{
+  background: linear-gradient(to bottom right, #99B898, #FECEAB);
+}
 
 .grid-content {
   display: grid;
