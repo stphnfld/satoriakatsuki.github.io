@@ -244,3 +244,10 @@ footer {
 #contact {
   margin: 200px;
 }
+
+.contactlogo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
