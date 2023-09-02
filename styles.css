@@ -203,3 +203,37 @@ footer {
 .coming-soon:hover::after {
   opacity: 1;
 }
+
+.footer-gradient {
+  background: linear-gradient(to bottom right, #99B898, #FECEAB);
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+  /* Add other styling properties for your footer */
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.contact-content p {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
