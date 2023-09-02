@@ -139,7 +139,9 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
-
+.footer-gradient{
+  background: linear-gradient(to bottom right, #2A363B, #FECEAB);
+}
 footer p {
   background-color: #2A363B; /* Replace with your desired background color */
   padding: 10px;
