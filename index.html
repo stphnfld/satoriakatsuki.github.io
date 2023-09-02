@@ -24,7 +24,7 @@
   <div class="grid-content">
     <a href="/contact.html" class="cta-button">Contact</a>
     <a href="https://www.youtube.com/channel/satoriakatsuki" class="cta-button">YouTube</a>
-    <a href="#"><span class="tooltip">Merch</span></a>
+    <a href="#" class="cta-button no-interact">Merch</a>
   </div>
 </section>
   <!-- script for youtube video embed -->
@@ -39,6 +39,9 @@
 
     var youtubeIframe = document.getElementById('youtube-iframe');
     youtubeIframe.src = randomVideoUrl;
+    document.querySelector('.no-interact').addEventListener('click', function(event) {
+        event.preventDefault();
+    });
   </script>
   <footer class="footer-gradient">
     <span>&copy; 2023 Satori Akatsuki. All rights reserved.</span>
