@@ -16,8 +16,10 @@
   </section>
 
   <section class="random-video">
-    <iframe id="youtube-iframe" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </section>
+    <div class="video-container">
+        <iframe id="youtube-iframe" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</section>
 
 <!-- Horizontal Grid Layout -->
 <!--
@@ -31,15 +33,37 @@
   <!-- script for youtube video embed -->
   <script>
     var youtubeLinks = [
-        "https://www.youtube.com/embed/tUan3soDgjY?si=HJ0JAUOvmHWCJsn1", // Add more video URLs as needed
-        "https://www.youtube.com/embed/spuwX4rPhDA?si=rpeEiCcBxpANQ8jx"
+      "https://www.youtube.com/embed/tUan3soDgjY?si=HJ0JAUOvmHWCJsn1", // Add more video URLs as needed
+      "https://www.youtube.com/embed/spuwX4rPhDA?si=rpeEiCcBxpANQ8jx"
     ];
 
     var randomIndex = Math.floor(Math.random() * youtubeLinks.length);
-    var randomVideoUrl = youtubeLinks[randomIndex];
+    var currentVideoIndex = randomIndex;
 
     var youtubeIframe = document.getElementById('youtube-iframe');
-    youtubeIframe.src = randomVideoUrl;
+    youtubeIframe.src = youtubeLinks[currentVideoIndex];
+
+    var prevButton = document.querySelector('.prev-video');
+    var nextButton = document.querySelector('.next-video');
+
+    prevButton.addEventListener('click', function() {
+        currentVideoIndex = (currentVideoIndex - 1 + youtubeLinks.length) % youtubeLinks.length;
+        youtubeIframe.classList.add('slide-out');
+        setTimeout(function() {
+            youtubeIframe.src = youtubeLinks[currentVideoIndex];
+            youtubeIframe.classList.remove('slide-out');
+        }, 300); // Adjust the transition duration as needed
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentVideoIndex = (currentVideoIndex + 1) % youtubeLinks.length;
+        youtubeIframe.classList.add('slide-out');
+        setTimeout(function() {
+            youtubeIframe.src = youtubeLinks[currentVideoIndex];
+            youtubeIframe.classList.remove('slide-out');
+        }, 300); // Adjust the transition duration as needed
+    });
+
     document.querySelector('.no-interact').addEventListener('click', function(event) {
         event.preventDefault();
     });
