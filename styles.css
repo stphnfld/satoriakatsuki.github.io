@@ -5,11 +5,40 @@ body, h1, h2, h3 {
   color: #FFF; /* Set font color to white */
   background-color: #99B898; /* Updated background color */
 }
+
 ul{
   background-color:#FF847C;
 }
+
 p{
   background-color: #99B898;
+}
+
+/* sticky header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Optional background color with transparency */
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+nav {
+  padding: 1rem; /* Add some padding for spacing */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #FF847C;
+}
+
+nav ul li {
+  margin: 0 1rem;
 }
 
 /* force header text uppercase */
@@ -24,20 +53,11 @@ body {
 }
 
 header {
-  background-color: #FF847C;
   color: white;
   padding: 10px 0;
 }
 
-nav ul {
-  background-color: #FF847C;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
 nav a {
-  background-color: #FF847C;
   text-decoration: none;
   color: white;
   margin: 0 20px;
@@ -107,9 +127,6 @@ footer {
   height: auto;
 }
 
-/* for buttons+yt links ection */
-/* styles.css */
-
 #grid {
   display: flex;
   justify-content: center;
@@ -117,7 +134,7 @@ footer {
   padding: 20px 0;
   background-color: #FECEAB;
 }
-.section-grid{
+.section-grid {
   background: linear-gradient(to bottom right, #FECEAB, #2A363B);
 }
 
@@ -130,15 +147,6 @@ footer {
   margin: 0 auto;
 }
 
-.cta-button {
-  display: block;
-  text-align: center;
-  padding: 10px 20px;
-  background-color: #E84A5F;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
 .footer-gradient{
   background: linear-gradient(to bottom right, #2A363B, #FECEAB);
 }
