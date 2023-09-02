@@ -43,6 +43,29 @@
         event.preventDefault();
     });
   </script>
+  <script>
+    const headerNav = document.getElementById('header-nav');
+    let isSwiping = false;
+
+    headerNav.addEventListener('touchstart', (e) => {
+        isSwiping = false;
+    });
+
+    headerNav.addEventListener('touchmove', (e) => {
+        isSwiping = true;
+    });
+
+    headerNav.addEventListener('touchend', (e) => {
+        if (!isSwiping) {
+            const links = headerNav.querySelectorAll('a');
+            links.forEach((link) => {
+                link.classList.remove('active');
+            });
+            e.target.classList.add('active');
+        }
+        isSwiping = false;
+    });
+  </script>
   <footer class="footer-gradient">
     <span>&copy; 2023 Satori Akatsuki. All rights reserved.</span>
   </footer>

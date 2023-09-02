@@ -1,16 +1,17 @@
 // JavaScript code to dynamically insert the header HTML
 var headerHtml = `
-  <header>
+<header>
     <nav>
-      <ul>
-        <li><a href="/"><img src="smiley.png" class="headerlogo"></img></a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="https://www.youtube.com/channel/satoriakatsuki" target="_blank">YouTube</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="shop.satoriakatsuki.com" class="disabled coming-soon" data-tooltip="Coming Soon!">Merch</a></li>
-      </ul>
+        <ul id="header-nav">
+            <li><a href="/"><img src="smiley.png" class="headerlogo"></a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://www.youtube.com/channel/satoriakatsuki" target="_blank">YouTube</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="shop.satoriakatsuki.com" class="disabled coming-soon" data-tooltip="Coming Soon!">Merch</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
+
 `;
 
 var body = document.querySelector('body');
