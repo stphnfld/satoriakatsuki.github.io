@@ -92,3 +92,52 @@ footer {
   max-width: 55%; /* Adjust this value to make the logo smaller */
   height: auto;
 }
+
+/* for buttons+yt links ection */
+/* styles.css */
+
+#grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.youtube-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.youtube-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.youtube-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
