@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #E84A5F;
+  background-color: #FF847C !important;
   color: white;
   padding: 10px 0;
 }
@@ -101,7 +101,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: #f2f2f2;
+  background-color: #FECEAB;
 }
 
 .grid-content {
@@ -117,8 +117,12 @@ footer {
   display: block;
   text-align: center;
   padding: 10px 20px;
-  background-color: #FF847C;
+  background-color: #E84A5F;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.footer p{
+  background-color: #2A363B;
 }
