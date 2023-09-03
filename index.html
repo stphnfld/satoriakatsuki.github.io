@@ -16,15 +16,10 @@
   </section>
 
   <section class="random-video">
-    <div class="squares-container left"></div>
-    <div class="squares-container right"></div>
-
     <div class="video-container">
         <iframe id="youtube-iframe" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </section>
-
-
 
 <!-- Horizontal Grid Layout -->
 <!--
@@ -94,37 +89,6 @@
         }
         isSwiping = false;
     });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.squares-container');
-
-    // Function to generate a random square
-    function generateSquare() {
-        const square = document.createElement('div');
-        square.classList.add('square');
-
-        const randomColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
-        square.style.color = randomColor;
-
-        const randomLeft = Math.random() * section.clientWidth;
-        square.style.left = `${randomLeft}px`;
-
-        const randomDuration = Math.random() * 2 + 3; // Duration between 3 to 5 seconds
-        square.style.animationDuration = `${randomDuration}s`;
-
-        container.appendChild(square);
-
-        // Remove the square after animation completes to avoid a buildup of divs in the DOM
-        square.addEventListener('animationend', () => {
-            square.remove();
-        });
-    }
-
-    // Generate squares at an interval
-    setInterval(generateSquare, 250); // 4 squares per second
-    });
-
   </script>
 <footer class="footer-gradient">
   <span class="footer-copyright">&copy; 2023 Satori Akatsuki. All rights reserved.</span>
