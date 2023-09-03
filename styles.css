@@ -368,15 +368,48 @@ a:-webkit-any-link {
   color: #FFF;
 }
 
-header {
-  overflow: hidden; /* Ensure falling squares don't exceed the header boundaries */
+
+/* logic for raining squares*/
+.random-video {
+  position: relative; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.falling-square {
+.squares-container {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #000; /* Color of the square */
-  opacity: 0.7; /* Adjust as needed for desired transparency */
-  transform-origin: center;
+  top: 0;
+  width: 20%; /* Adjust width based on desired margin size */
+  height: 100%;
+  z-index: 0;
+}
+
+.squares-container.left {
+  left: 0;
+}
+
+.squares-container.right {
+  right: 0;
+}
+
+.video-container {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0; /* Ensure the video doesn't shrink */
+}
+
+.square {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: currentColor;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+      transform: translateY(calc(100% + 48px));
+  }
 }

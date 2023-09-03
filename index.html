@@ -15,18 +15,14 @@
     <img src="/satoriakatsukilogo2023.png" alt="Satori Akatsuki Logo 2023">
   </section>
 
-  <div class="main-element-youtube">
-    <section class="random-video-youtube">
-      <div class="squares-container-youtube left-youtube"></div>
-      <div class="squares-container-youtube right-youtube"></div>
+  <section class="random-video">
+    <div class="squares-container left"></div>
+    <div class="squares-container right"></div>
 
-      <div class="video-container-youtube">
-          <iframe id="youtube-iframe" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </section>
-</div>
-
-
+    <div class="video-container">
+        <iframe id="youtube-iframe" width="1280" height="720" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</section>
 
 
 
@@ -100,47 +96,34 @@
     });
   </script>
   <script>
-  const header = document.querySelector('header');
-  const colors = ['#99B898', '#FECEAB', '#E84A5F', '#2A363B'];
+    document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.squares-container');
 
-  function getRandomColor() {
-      return colors[Math.floor(Math.random() * colors.length)];
-  }
+    // Function to generate a random square
+    function generateSquare() {
+        const square = document.createElement('div');
+        square.classList.add('square');
 
-  function spawnSquare() {
-    const square = document.createElement('div');
-    square.classList.add('falling-square');
+        const randomColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+        square.style.color = randomColor;
 
-    // Set the square to a random color from the list
-    square.style.backgroundColor = getRandomColor();
+        const randomLeft = Math.random() * section.clientWidth;
+        square.style.left = `${randomLeft}px`;
 
-    // Position the square at a random horizontal position
-    square.style.left = Math.random() * header.clientWidth + 'px';
+        const randomDuration = Math.random() * 2 + 3; // Duration between 3 to 5 seconds
+        square.style.animationDuration = `${randomDuration}s`;
 
-    // Set a random rotation angle
-    square.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+        container.appendChild(square);
 
-    header.appendChild(square);
+        // Remove the square after animation completes to avoid a buildup of divs in the DOM
+        square.addEventListener('animationend', () => {
+            square.remove();
+        });
+    }
 
-    // Animation
-    square.animate([
-        { top: '-10px' }, 
-        { top: header.clientHeight + 'px', offset: 0.99 },
-        { top: header.clientHeight + 'px', opacity: 0 }
-    ], {
-        duration: Math.random() * 2000 + 3000, // Random duration between 3-5 seconds
-        easing: 'linear'
-    }).onfinish = () => {
-        header.removeChild(square);
-    };
-  }
-
-  function startAnimation() {
-      spawnSquare();
-      setInterval(spawnSquare, 1000); // Adjust this interval for faster or slower square spawning
-  }
-
-  window.addEventListener('load', startAnimation);
+    // Generate squares at an interval
+    setInterval(generateSquare, 250); // 4 squares per second
+    });
 
   </script>
 <footer class="footer-gradient">
