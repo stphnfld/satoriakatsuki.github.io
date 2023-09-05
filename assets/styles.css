@@ -94,7 +94,7 @@ footer {
   padding: 20px 20px;
 }
 
-/* Add this to your existing styles.css */
+/* Add this to your existing /assets/styles.css */
 
 #logo {
   display: flex;
@@ -105,7 +105,7 @@ footer {
   box-sizing: border-box;
   position: relative; /* Add position: relative */
   margin-top: 50px;
-  background-image: url(behind-logo-purple-lights.png);
+  background-image: url(/images/behind-logo-purple-lights.png);
 }
 
 
@@ -170,7 +170,7 @@ footer {
   background-color: #FFF; /* Adjust the underline color */
 }
 
-/* styles.css */
+/* /assets/styles.css */
 .disabled {
   pointer-events: none; /* Disable click events */
   color: #FFF; /* Change link color for disabled state */
@@ -178,7 +178,7 @@ footer {
   cursor: not-allowed; /* Change cursor to indicate non-clickable */
 }
 
-/* styles.css */
+/* /assets/styles.css */
 .coming-soon {
   position: relative;
 }
@@ -223,7 +223,7 @@ footer {
   padding: 2em;
   margin: auto;
   max-width: 600px;
-  background-image: url(behind-logo-purple-lights.png);
+  background-image: url(/images/behind-logo-purple-lights.png);
   background-size: cover; /* Adjust the background sizing */
   background-repeat: no-repeat;
 }
@@ -259,7 +259,7 @@ footer {
   margin: 0 auto;
 }
 
-/* styles.css */
+/* /assets/styles.css */
 /* Base styles for header navigation */
 #header-nav {
   display: flex;
