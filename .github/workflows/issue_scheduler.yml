@@ -35,7 +35,7 @@ jobs:
         git push
 
     - name: Schedule update at the specified time
-      if: github.event.issue.body =~ 'Schedule an update for the YouTube link.'
+      if: steps.extract-info.outputs.schedule != 'null'
       run: |
         SCHEDULE=${{ steps.extract-info.outputs.schedule }}
         echo "Scheduled update at: $SCHEDULE"
