@@ -1,12 +1,11 @@
 ---
-name: Update YouTube Link
-about: Schedule a link update
+name: Update YouTube Link Schedule
+about: Schedule an update for the YouTube link.
 ---
 
-## Cron Schedule
-<!-- Specify the cron schedule in the following line -->
-- cron: 'YOUR_CRON_SCHEDULE_HERE'
+Update YouTube Link Schedule:
+- Date: YYYY-MM-DD
+- Time: HH:MM PST
 
-## YouTube Embed Link
-<!-- Paste your FULL YouTube embed link in the following line -->
-- link: 'YOUR_YOUTUBE_EMBED_LINK_HERE'
+New YouTube Link:
+https://www.youtube.com/embed/xxxx?si=xxxx

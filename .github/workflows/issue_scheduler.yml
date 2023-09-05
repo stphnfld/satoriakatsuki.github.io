@@ -13,9 +13,17 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Extract YouTube link and schedule
+      id: extract-info
+      run: |
+        LINK=$(cat $GITHUB_EVENT_PATH | jq -r '.issue.body' | grep -A3 'New YouTube Link:' | grep -Eo 'https://www\.youtube\.com/embed/[a-zA-Z0-9_-]+')
+        SCHEDULE=$(cat $GITHUB_EVENT_PATH | jq -r '.issue.body' | grep -A2 'Date:' | grep 'Time:' -A1 | tail -n1 | awk '{print $2}')
+        echo "::set-output name=link::$LINK"
+        echo "::set-output name=schedule::$SCHEDULE"
+
     - name: Update index.html with new YouTube link from issue
       run: |
-        LINK=$(cat $GITHUB_EVENT_PATH | jq -r '.issue.body' | grep 'link:' | awk '{print $2}')
+        LINK=${{ steps.extract-info.outputs.link }}
         sed -i "s#https://www.youtube.com/embed/[^?]*?#$LINK?#g" index.html
 
     - name: Commit and push if there are changes
@@ -26,10 +34,26 @@ jobs:
         git diff --quiet && git diff --staged --quiet || git commit -m "Updated YouTube link from Issue"
         git push
 
-    - name: Disable workflow cron schedule
+    - name: Schedule update at the specified time
+      if: github.event.issue.body =~ 'Schedule an update for the YouTube link.'
       run: |
-        sed -i 's/cron: .*/# cron schedule disabled/g' .github/workflows/update-youtube-link.yml
-        git config user.name 'GitHub Action'
-        git config user.email 'github-action@users.noreply.github.com'
-        git commit -am "Disable cron schedule after run"
-        git push
+        SCHEDULE=${{ steps.extract-info.outputs.schedule }}
+        echo "Scheduled update at: $SCHEDULE"
+        # Add your code here to schedule the update at the specified time.
+        # You might need to use a third-party scheduling service or script for this.
+        # This step will depend on the specific scheduling mechanism you choose.
+
+    - name: Comment on issue (success)
+      if: success()
+      run: |
+        COMMENT_MESSAGE="The YouTube link has been successfully updated and the issue is now closed."
+        echo "$COMMENT_MESSAGE"
+        gh issue comment ${{ github.event.issue.number }} --body "$COMMENT_MESSAGE"
+        gh issue close ${{ github.event.issue.number }}
+
+    - name: Comment on issue (failure)
+      if: failure()
+      run: |
+        COMMENT_MESSAGE="An error occurred while updating the YouTube link. Please check the workflow logs for more details."
+        echo "$COMMENT_MESSAGE"
+        gh issue comment ${{ github.event.issue.number }} --body "$COMMENT_MESSAGE"
