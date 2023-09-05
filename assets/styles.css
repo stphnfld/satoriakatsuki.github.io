@@ -367,3 +367,13 @@ footer {
 a:-webkit-any-link {
   color: #FFF;
 }
+
+.falling-square {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  background-color: #2A363B; /* Default color, but it will be overridden by JS */
+  opacity: 1;
+  z-index: 10; /* Make sure they appear on top of other header content. Adjust as needed */
+}
