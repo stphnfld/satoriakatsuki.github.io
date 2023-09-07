@@ -377,3 +377,16 @@ a:-webkit-any-link {
   opacity: 1;
   z-index: 10; /* Make sure they appear on top of other header content. Adjust as needed */
 }
+
+.banner-section {
+  background-color: #FF847C; /* Background color for the banner */
+  text-align: center;
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.banner-text {
+  font-size: 24px; /* Header-sized text */
+  font-weight: bold;
+  color: white; /* Text color */
+  margin: 0;
+}
