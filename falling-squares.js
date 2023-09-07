@@ -34,8 +34,7 @@ function spawnSquare() {
 }
 
 function startAnimation() {
-    spawnSquare();
-    setInterval(spawnSquare, 1000); // Adjust this interval for faster or slower square spawning
+    setInterval(spawnSquare, 50); // modify interval (increase to reduce quantity, decrease or move closer to 0 to increase)
 }
 
 window.addEventListener('load', startAnimation);
