@@ -132,10 +132,10 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: #FECEAB;
+  background-color: var(--background-color);
 }
 .section-grid {
-  background:#FECEAB;
+  background:var(--background-color);
 }
 
 .grid-content {
@@ -148,7 +148,7 @@ footer {
 }
 
 .footer-gradient{
-  background: linear-gradient(to bottom right, var(--background-color), var(--cta-button-background));
+  background: linear-gradient(to bottom right, var(--background-color), var(--footer-background-color));
   padding: 1em;
   color: var(--text-color);
   text-align: center;
