@@ -8,7 +8,7 @@
   --footer-background-color: #110a2d;
   --hero-text-color: #000000;
   --link-color: #d49eeb;
-  --banner-background-color: #1e1d6d;
+  --banner-background-color: #701e93;
 }
 
 /* Reset some default styles for better consistency */
@@ -114,7 +114,7 @@ footer {
   justify-content: center;
   margin: 0 auto;
   max-width: 100%;
-  padding: 250px 20px; /* Adjust margin as needed */
+  padding: 150px 20px; /* Adjust margin as needed */
   box-sizing: border-box;
   position: relative; /* Add position: relative */
   margin-top: 50px;
