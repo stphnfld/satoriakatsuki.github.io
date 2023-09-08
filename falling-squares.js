@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-const colors = ['#99B898', '#FECEAB', '#E84A5F', '#2A363B'];
+const colors = ['#4864F8', '#D49EEB', '#E84A5F', '110A2D', '#D39DEA', '#B7ADDB', '#AC44D8', '#7562BA', '#082DF1', '#4F4DCF'];
 
 function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];

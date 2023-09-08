@@ -1,14 +1,14 @@
 /* Define CSS variables for colors */
 :root {
   --text-color: #FFF;
-  --background-color: #99B898;
-  --ul-background-color: #FF847C;
-  --header-background-color: #FF847C;
-  --cta-button-background: #FF847C;
-  --footer-background-color: #2A363B;
+  --background-color: #4864f8;
+  --ul-background-color: #1e1d6d;
+  --header-background-color: #1e1d6d;
+  --cta-button-background: #0622b4;
+  --footer-background-color: #110a2d;
   --hero-text-color: #000000;
-  --link-color: #FFF;
-  --banner-background-color: #FF847C;
+  --link-color: #d49eeb;
+  --banner-background-color: #1e1d6d;
 }
 
 /* Reset some default styles for better consistency */
