@@ -1,0 +1,16 @@
+/* Style the main content section */
+main {
+  padding-top: 20px; /* Add padding to create space between the content and the header */
+  margin-top: 20px; /* Add margin to push the content below the header */
+  margin: 500px 500px 500px 500px;
+  overflow: auto; /* Add scrollbars if the content overflows the container */
+}
+
+/* Example styles for main content */
+main {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Adjust background color, border, and border-radius as needed */

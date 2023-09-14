@@ -118,7 +118,7 @@ footer {
   box-sizing: border-box;
   position: relative; /* Add position: relative */
   margin-top: 50px;
-  background-image: url(/images/behind-logo-purple-lights.png);
+  background-image: url(/images/behind-logo-purple-lights.jpg);
 }
 
 
@@ -241,7 +241,7 @@ footer {
   padding: 2em;
   margin: auto;
   max-width: 600px;
-  background-image: url(/images/behind-logo-purple-lights.png);
+  background-image: url(/images/behind-logo-purple-lights.jpg);
   background-size: cover; /* Adjust the background sizing */
   background-repeat: no-repeat;
 }
