@@ -5,7 +5,7 @@ var headerHtml = `
         <ul id="header-nav">
             <li><a href="/"><img src="/images/smiley.png" class="headerlogo"></a></li>
             <li><a href="/about/">About</a></li>
-            <li><a href="https://www.youtube.com/channel/satoriakatsuki" target="_blank">YouTube</a></li>
+            <li><a href="https://www.youtube.com/@satoriakatsuki" target="_blank">YouTube</a></li>
             <li><a href="/contact/">Contact</a></li>
             <li><a href="shop.satoriakatsuki.com" class="disabled coming-soon" data-tooltip="Coming Soon!">Merch</a></li>
         </ul>
